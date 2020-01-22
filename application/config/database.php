@@ -77,8 +77,13 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
+<<<<<<< HEAD
 	'password' => '',
 	'database' => 'bddb2',
+=======
+	'password' => 'root',
+	'database' => 'bddb',
+>>>>>>> 92270e3946f229e4780175912c507a75526b3d74
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

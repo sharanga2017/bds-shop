@@ -5,11 +5,18 @@
 !*/cache/index.html
 !*/cache/.htaccess
 
+<<<<<<< HEAD
 .idea
+=======
+
+>>>>>>> 92270e3946f229e4780175912c507a75526b3d74
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
+
+
+.idea
 
 #codeigniter 3
 application/logs/*
