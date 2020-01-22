@@ -5,11 +5,11 @@
 !*/cache/index.html
 !*/cache/.htaccess
 
-<<<<<<< HEAD
-.idea
-=======
 
->>>>>>> 92270e3946f229e4780175912c507a75526b3d74
+.idea
+
+
+
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
