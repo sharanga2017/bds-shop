@@ -79,32 +79,32 @@
 
 		<div class="col-lg-9">
 
-			<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="" data-slide-to="0" class="active"></li>
-					<li data-target="<?php echo base_url('uploads/product_images/Bdimg2.jpg') ; ?>"  data-slide-to="1"></li>
-					<li data-target="<?php echo base_url('uploads/product_images/Bdimg3.jpg') ; ?>"  data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="carousel-item active">
-						<img class="d-block img-fluid" src="<?php echo base_url('uploads/product_images/Bdimg1.jpg') ; ?>" alt="First slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block img-fluid" src="<?php echo base_url('uploads/product_images/Bdimg2.jpg') ; ?>" alt="Second slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block img-fluid" src="<?php echo base_url('uploads/product_images/Bdimg3.jpg') ; ?>" alt="Third slide">
-					</div>
-				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
+<!--			<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">-->
+<!--				<ol class="carousel-indicators">-->
+<!--					<li data-target="" data-slide-to="0" class="active"></li>-->
+<!--					<li data-target="--><?php //echo base_url('uploads/product_images/Bdimg2.jpg') ; ?><!--"  data-slide-to="1"></li>-->
+<!--					<li data-target="--><?php //echo base_url('uploads/product_images/Bdimg3.jpg') ; ?><!--"  data-slide-to="2"></li>-->
+<!--				</ol>-->
+<!--				<div class="carousel-inner" role="listbox">-->
+<!--					<div class="carousel-item active">-->
+<!--						<img class="d-block img-fluid" src="--><?php //echo base_url('uploads/product_images/Bdimg1.jpg') ; ?><!--" alt="First slide">-->
+<!--					</div>-->
+<!--					<div class="carousel-item">-->
+<!--						<img class="d-block img-fluid" src="--><?php //echo base_url('uploads/product_images/Bdimg2.jpg') ; ?><!--" alt="Second slide">-->
+<!--					</div>-->
+<!--					<div class="carousel-item">-->
+<!--						<img class="d-block img-fluid" src="--><?php //echo base_url('uploads/product_images/Bdimg3.jpg') ; ?><!--" alt="Third slide">-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">-->
+<!--					<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--					<span class="sr-only">Previous</span>-->
+<!--				</a>-->
+<!--				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">-->
+<!--					<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--					<span class="sr-only">Next</span>-->
+<!--				</a>-->
+<!--			</div>-->
 <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 
 <!--<h2>Bds</h2>-->
@@ -117,16 +117,16 @@
 <!-- List all products -->
 
 <div class="row tb_pagination_width" >
-	<div id="myTable" >
+	<div id="myTable" class="row" >
 		<?php if(!empty($bds)){ foreach($bds as $row){ ?>
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="<?php echo base_url('uploads/product_images/'.$row['ref'] . '.jpg') ; ?>"  onerror="this.onerror=null;this.src='<?php echo base_url('uploads/product_images/defaut.jpg')  ; ?> ';" />
+			<div class="col-sm-4 col-lg-4 col-md-4 col-lg-4 col-md-6 mb-4">
+				<div class="thumbnail card h-100 cadre2">
+					<img class="imgBd" src="<?php echo base_url('uploads/product_images/'.$row['ref'] . '.jpg') ; ?>"  onerror="this.onerror=null;this.src='<?php echo base_url('uploads/product_images/defaut.jpg')  ; ?> ';" />
 
-					<div class="caption">
+					<div class="caption ">
 						<h4 class="pull-right">$<?php echo $row['prix_public']; ?> euros</h4>
 						<h4><?php echo $row['titre']; ?></h4>
-						<p><?php echo $row['resume']; ?></p>
+<!--						<p>--><?php //echo $row['resume']; ?><!--</p>-->
 					</div>
 					<div class="atc">
 						<a href="<?php echo base_url('bds/addToCart/'.$row['id']); ?>" class="btn btn-success">

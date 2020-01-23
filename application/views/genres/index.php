@@ -88,15 +88,15 @@
 <div class="row tb_pagination_width" >
 	<div id="myTable" >
 		<?php if(!empty($grs)){ foreach($grs as $row){ ?>
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
+			<div class="col-sm-4 col-lg-4 col-md-4 " >
+				<div class="thumbnail cadre2">
 
-					<img src="<?php echo base_url('uploads/product_images/'.$row['ref'] . '.jpg') ; ?>"  onerror="this.onerror=null;this.src='<?php echo base_url('uploads/product_images/defaut.jpg')  ; ?> ';" />
+					<img class="imgBd" src="<?php echo base_url('uploads/product_images/'.$row['ref'] . '.jpg') ; ?>"  onerror="this.onerror=null;this.src='<?php echo base_url('uploads/product_images/defaut.jpg')  ; ?> ';" />
 
 					<div class="caption">
 						<h4 class="pull-right">$<?php echo $row['prix_public']; ?> euros</h4>
 						<h4><?php echo $row['titre']; ?></h4>
-						<p><?php echo $row['resume']; ?></p>
+<!--						<p>--><?php //echo $row['resume']; ?><!--</p>-->
 					</div>
 					<div class="atc">
 						<a href="<?php echo base_url('bds/addToCart/'.$row['id']); ?>" class="btn btn-success">
